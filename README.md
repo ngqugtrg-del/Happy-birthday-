@@ -27,10 +27,13 @@
             font-family: 'Comfortaa', cursive;
             overflow: hidden;
             height: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
             perspective: 1500px;
+            margin: 0;
+            padding: 0;
         }
 
         /* NỀN SAO LẤP LÁNH CHUNG */
@@ -42,7 +45,7 @@
 
         /* KHUNG CHUẨN CHO CÁC MÀN HÌNH */
         .screen {
-            position: absolute; width: 100%; height: 100%;
+            position: absolute; width: 100%; height: 100%; top: 0; left: 0;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             opacity: 0; visibility: hidden; z-index: 2;
             transition: opacity 1s ease-in-out, visibility 1s;
